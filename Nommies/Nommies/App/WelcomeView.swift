@@ -30,6 +30,7 @@ struct WelcomeView: View {
             Image("People")
                 .resizable()
                 .frame( height: GetRect().height * 0.325, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                .padding()
             
             
             VStack{
@@ -39,7 +40,7 @@ struct WelcomeView: View {
                                     .fill(Color.white)
                         .frame(width: GetRect().width, height: GetRect().height * 0.675, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                                     .shadow(radius: 1)
-                        .offset(x: 0, y: -20.0)
+                        .offset(x: 0, y: -60.0)
                                     
                     
                     VStack(alignment:.leading, spacing:10) {
@@ -67,7 +68,7 @@ struct WelcomeView: View {
                             destination: RegisterView(),
                             isActive: $isSegue,
                             label: {
-                                SubmissionButtonView(action: signInAction, title: "Sign IN")
+                                SubmissionButtonView(action: signInAction, title: "Sign In")
                                     .padding(.bottom, 30)
                             })
                        

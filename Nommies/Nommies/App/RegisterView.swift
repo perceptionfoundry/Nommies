@@ -8,12 +8,22 @@
 import SwiftUI
 
 struct RegisterView: View {
+    @Environment(\.presentationMode) var presentationMode
+    @State var isSegue = false
     var body: some View {
       
             
                 VStack{
                     
-                 
+                    HStack{
+                        Button(action: {
+                            presentationMode.wrappedValue.dismiss()
+                        }, label: {
+                            Image(systemName: "xmark")
+                                .foregroundColor(.black)
+                        })
+                        Spacer()
+                    }
                     
                     Image("Mail")
                         .resizable()
@@ -38,7 +48,13 @@ struct RegisterView: View {
                         .foregroundColor(.gray)
                        
 
-                    SubmissionButtonView(action: mailButtonAction, title: "Open Mail App")
+                    NavigationLink(
+                        destination: DoneView(),
+                        isActive: $isSegue,
+                        label: {
+                            SubmissionButtonView(action: mailButtonAction, title: "Open Mail App")
+                        })
+                    
                    
                    
                     Spacer()
@@ -59,10 +75,11 @@ struct RegisterView: View {
                 .padding()
                 .navigationBarHidden(true)
                 .navigationBarBackButtonHidden(true)
+                
             }
     
     func mailButtonAction(){
-        
+        isSegue = true
     }
 }
 

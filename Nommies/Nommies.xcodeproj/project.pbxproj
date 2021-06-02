@@ -15,6 +15,8 @@
 		F2A8078326675BBB00DE096C /* Keedy SansBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F2A8078126675BBB00DE096C /* Keedy SansBold.ttf */; };
 		F2A80787266771D700DE096C /* SubmissionButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A80786266771D700DE096C /* SubmissionButtonView.swift */; };
 		F2A8078926677F7300DE096C /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A8078826677F7300DE096C /* RegisterView.swift */; };
+		F2A8078B266787EF00DE096C /* DoneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A8078A266787EF00DE096C /* DoneView.swift */; };
+		F2A8078D26678A1A00DE096C /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A8078C26678A1A00DE096C /* HomeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		F2A8078126675BBB00DE096C /* Keedy SansBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Keedy SansBold.ttf"; sourceTree = "<group>"; };
 		F2A80786266771D700DE096C /* SubmissionButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmissionButtonView.swift; sourceTree = "<group>"; };
 		F2A8078826677F7300DE096C /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
+		F2A8078A266787EF00DE096C /* DoneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoneView.swift; sourceTree = "<group>"; };
+		F2A8078C26678A1A00DE096C /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +97,8 @@
 				F2997B922666B3810011969D /* NommiesApp.swift */,
 				F2997B942666B3810011969D /* WelcomeView.swift */,
 				F2A8078826677F7300DE096C /* RegisterView.swift */,
+				F2A8078A266787EF00DE096C /* DoneView.swift */,
+				F2A8078C26678A1A00DE096C /* HomeView.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -179,6 +185,8 @@
 				F2A80787266771D700DE096C /* SubmissionButtonView.swift in Sources */,
 				F2A8078926677F7300DE096C /* RegisterView.swift in Sources */,
 				F2997B952666B3810011969D /* WelcomeView.swift in Sources */,
+				F2A8078D26678A1A00DE096C /* HomeView.swift in Sources */,
+				F2A8078B266787EF00DE096C /* DoneView.swift in Sources */,
 				F2997B932666B3810011969D /* NommiesApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
