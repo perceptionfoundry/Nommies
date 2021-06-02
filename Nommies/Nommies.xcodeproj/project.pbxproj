@@ -11,6 +11,8 @@
 		F2997B952666B3810011969D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2997B942666B3810011969D /* ContentView.swift */; };
 		F2997B972666B3840011969D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2997B962666B3840011969D /* Assets.xcassets */; };
 		F2997B9A2666B3840011969D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2997B992666B3840011969D /* Preview Assets.xcassets */; };
+		F2A80774266758DF00DE096C /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2A80773266758DF00DE096C /* Launch Screen.storyboard */; };
+		F2A8078326675BBB00DE096C /* Keedy SansBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F2A8078126675BBB00DE096C /* Keedy SansBold.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +22,8 @@
 		F2997B962666B3840011969D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F2997B992666B3840011969D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F2997B9B2666B3840011969D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F2A80773266758DF00DE096C /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		F2A8078126675BBB00DE096C /* Keedy SansBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Keedy SansBold.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,10 +56,12 @@
 		F2997B912666B3810011969D /* Nommies */ = {
 			isa = PBXGroup;
 			children = (
+				F2A807752667594C00DE096C /* Fonts */,
 				F2997B922666B3810011969D /* NommiesApp.swift */,
 				F2997B942666B3810011969D /* ContentView.swift */,
 				F2997B962666B3840011969D /* Assets.xcassets */,
 				F2997B9B2666B3840011969D /* Info.plist */,
+				F2A80773266758DF00DE096C /* Launch Screen.storyboard */,
 				F2997B982666B3840011969D /* Preview Content */,
 			);
 			path = Nommies;
@@ -67,6 +73,14 @@
 				F2997B992666B3840011969D /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F2A807752667594C00DE096C /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				F2A8078126675BBB00DE096C /* Keedy SansBold.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,6 +140,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F2A80774266758DF00DE096C /* Launch Screen.storyboard in Resources */,
+				F2A8078326675BBB00DE096C /* Keedy SansBold.ttf in Resources */,
 				F2997B9A2666B3840011969D /* Preview Assets.xcassets in Resources */,
 				F2997B972666B3840011969D /* Assets.xcassets in Resources */,
 			);
