@@ -11,7 +11,11 @@ import SwiftUI
 struct NommiesApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            WelcomeView()
         }
     }
+}
+
+func GetRect() -> CGRect{
+    return UIScreen.main.bounds
 }
