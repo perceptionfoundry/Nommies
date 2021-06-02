@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct WelcomeView: View {
+    
+    @State var isSegue = false
+
     var body: some View {
 //        #if DEV
 //        Text("Hello, DEV!")
@@ -17,6 +20,8 @@ struct WelcomeView: View {
 //        Text("Hello, PROD!")
 //            .padding()
 //        #endif
+        
+        NavigationView{
         ScrollView(.vertical, showsIndicators: false){
         VStack{
             
@@ -58,9 +63,14 @@ struct WelcomeView: View {
                                 RoundedRectangle(cornerRadius: 18)
                                     .stroke(Color.gray)
                                     )
-                        
-                        SubmissionButtonView(action: signInAction, title: "Sign IN")
-                            .padding(.bottom, 30)
+                        NavigationLink(
+                            destination: RegisterView(),
+                            isActive: $isSegue,
+                            label: {
+                                SubmissionButtonView(action: signInAction, title: "Sign IN")
+                                    .padding(.bottom, 30)
+                            })
+                       
                        
                         HStack{
                             Spacer()
@@ -92,19 +102,14 @@ struct WelcomeView: View {
                 }
                 
             }
-           
-            
-//            Spacer()
-            
-           
-           
         }// VStack - MAIN (END)
         }// ScrollView - MAIN (END)
-            
+        .navigationBarHidden(true)
+        }
     }
     
     func signInAction(){
-        print("yahoo!")
+        isSegue = true
     }
 }
 
