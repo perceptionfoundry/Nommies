@@ -6,11 +6,6 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <customFonts key="customFonts">
-        <array key="Keedy SansBold.ttf">
-            <string>KeedySansBold</string>
-        </array>
-    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="EHf-IW-A2E">
@@ -29,25 +24,26 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nommies" textAlignment="center" lineBreakMode="middleTruncation" baselineAdjustment="alignBaselines" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="GJd-Yh-RWb">
-                                <rect key="frame" x="139" y="429.5" width="136" height="37"/>
-                                <fontDescription key="fontDescription" name="KeedySansBold" family="Keedy" pointSize="31"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="Eqn-dT-gPT">
+                                <rect key="frame" x="123" y="403" width="168" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Eqn-dT-gPT" secondAttribute="height" multiplier="15:8" id="JCM-E9-UXf"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Bcu-3y-fUS"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="Eqn-dT-gPT" firstAttribute="centerX" secondItem="7p5-my-4x5" secondAttribute="centerX" id="31v-1J-l3s"/>
+                            <constraint firstItem="Eqn-dT-gPT" firstAttribute="centerY" secondItem="7p5-my-4x5" secondAttribute="centerY" id="45Q-MK-oRb"/>
                             <constraint firstItem="Bcu-3y-fUS" firstAttribute="centerX" secondItem="obG-Y5-kRd" secondAttribute="centerX" id="5cz-MP-9tL"/>
-                            <constraint firstItem="GJd-Yh-RWb" firstAttribute="centerY" secondItem="7p5-my-4x5" secondAttribute="centerY" id="ADU-yA-F1O"/>
                             <constraint firstItem="7p5-my-4x5" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="F1D-vt-mab"/>
                             <constraint firstItem="7p5-my-4x5" firstAttribute="leading" secondItem="Bcu-3y-fUS" secondAttribute="leading" id="G6B-ig-jeV"/>
                             <constraint firstItem="obG-Y5-kRd" firstAttribute="leading" secondItem="Bcu-3y-fUS" secondAttribute="leading" constant="20" symbolic="YES" id="SfN-ll-jLj"/>
                             <constraint firstAttribute="bottom" secondItem="obG-Y5-kRd" secondAttribute="bottom" constant="20" id="Y44-ml-fuU"/>
                             <constraint firstAttribute="bottom" secondItem="7p5-my-4x5" secondAttribute="bottom" id="c2g-kH-jM0"/>
+                            <constraint firstItem="Eqn-dT-gPT" firstAttribute="height" secondItem="7p5-my-4x5" secondAttribute="height" multiplier="0.1" id="gAA-tQ-Cbj"/>
                             <constraint firstItem="7p5-my-4x5" firstAttribute="trailing" secondItem="Bcu-3y-fUS" secondAttribute="trailing" id="tl9-HL-74Z"/>
-                            <constraint firstItem="GJd-Yh-RWb" firstAttribute="centerX" secondItem="7p5-my-4x5" secondAttribute="centerX" id="xA2-Lg-etV"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -58,5 +54,6 @@
     </scenes>
     <resources>
         <image name="BG" width="375" height="812"/>
+        <image name="Logo" width="142.5" height="23.5"/>
     </resources>
 </document>
