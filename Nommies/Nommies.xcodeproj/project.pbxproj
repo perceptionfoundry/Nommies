@@ -14,6 +14,8 @@
 		F244B8B62669E698001FFFCE /* CreatePostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F244B8B52669E698001FFFCE /* CreatePostView.swift */; };
 		F244B8B82669E6AA001FFFCE /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F244B8B72669E6AA001FFFCE /* NotificationView.swift */; };
 		F244B8BA2669E6B8001FFFCE /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F244B8B92669E6B8001FFFCE /* ProfileView.swift */; };
+		F244B8BC2669FF5E001FFFCE /* InsetMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F244B8BB2669FF5E001FFFCE /* InsetMapView.swift */; };
+		F244B8BE266A17CD001FFFCE /* HomeCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F244B8BD266A17CD001FFFCE /* HomeCellView.swift */; };
 		F2997B932666B3810011969D /* NommiesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2997B922666B3810011969D /* NommiesApp.swift */; };
 		F2997B952666B3810011969D /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2997B942666B3810011969D /* WelcomeView.swift */; };
 		F2997B972666B3840011969D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2997B962666B3840011969D /* Assets.xcassets */; };
@@ -34,6 +36,8 @@
 		F244B8B52669E698001FFFCE /* CreatePostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePostView.swift; sourceTree = "<group>"; };
 		F244B8B72669E6AA001FFFCE /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
 		F244B8B92669E6B8001FFFCE /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		F244B8BB2669FF5E001FFFCE /* InsetMapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InsetMapView.swift; sourceTree = "<group>"; };
+		F244B8BD266A17CD001FFFCE /* HomeCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCellView.swift; sourceTree = "<group>"; };
 		F2997B8F2666B3810011969D /* Nommies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nommies.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2997B922666B3810011969D /* NommiesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NommiesApp.swift; sourceTree = "<group>"; };
 		F2997B942666B3810011969D /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
@@ -128,6 +132,8 @@
 				F2A80786266771D700DE096C /* SubmissionButtonView.swift */,
 				F244B8AF2669E3A1001FFFCE /* CustomTabView.swift */,
 				F244B8B02669E3A1001FFFCE /* TabButton.swift */,
+				F244B8BB2669FF5E001FFFCE /* InsetMapView.swift */,
+				F244B8BD266A17CD001FFFCE /* HomeCellView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -206,11 +212,13 @@
 				F244B8B22669E3A1001FFFCE /* TabButton.swift in Sources */,
 				F244B8BA2669E6B8001FFFCE /* ProfileView.swift in Sources */,
 				F2A80787266771D700DE096C /* SubmissionButtonView.swift in Sources */,
+				F244B8BC2669FF5E001FFFCE /* InsetMapView.swift in Sources */,
 				F2A8078926677F7300DE096C /* RegisterView.swift in Sources */,
 				F2997B952666B3810011969D /* WelcomeView.swift in Sources */,
 				F244B8B42669E675001FFFCE /* FoodieView.swift in Sources */,
 				F244B8B12669E3A1001FFFCE /* CustomTabView.swift in Sources */,
 				F2A8078D26678A1A00DE096C /* HomeView.swift in Sources */,
+				F244B8BE266A17CD001FFFCE /* HomeCellView.swift in Sources */,
 				F2A8078B266787EF00DE096C /* DoneView.swift in Sources */,
 				F244B8AE2669E38C001FFFCE /* TabMainView.swift in Sources */,
 				F2997B932666B3810011969D /* NommiesApp.swift in Sources */,

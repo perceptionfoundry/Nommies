@@ -9,9 +9,9 @@ import SwiftUI
 
 struct CustomTabView: View {
         
-    var tabs = ["Home","Knife","Center_Button","Notification","Profile"]
+    var tabs = ["Home","Foodies","Center","Notification","Profile"]
     
-    @State var selectedTab = "dashboard"
+    @State var selectedTab = "Home"
     @State var isNew = false
     
 
@@ -24,15 +24,14 @@ struct CustomTabView: View {
                 HomeView()
                     .tag("Home")
                 FoodieView()
-                    .tag("Knife")
+                    .tag("Foodies")
                 HomeView()
-                    .tag("Center_Button")
+                    .tag("Center")
                 NotificationView()
                     .tag("Notification")
                 ProfileView()
                     .tag("Profile")
             }
-            .tabViewStyle(PageTabViewStyle(indexDisplayMode: .never))
             .ignoresSafeArea(.all, edges: /*@START_MENU_TOKEN@*/.bottom/*@END_MENU_TOKEN@*/)
             
             
@@ -52,23 +51,25 @@ struct CustomTabView: View {
                 
                 Rectangle()
                     .fill(Color.white)
-                    .frame(height:15)
+                    .frame(height:20)
                     .zIndex(/*@START_MENU_TOKEN@*/1.0/*@END_MENU_TOKEN@*/)
                     .offset(x: 0, y: -20)
         }
-            .offset(x: 0, y: 30)
+            .offset(x: 0, y: 35)
         }.padding()
-        .sheet(isPresented: $isNew, content: {
+        .edgesIgnoringSafeArea(.bottom)
+        .fullScreenCover(isPresented: $isNew, content: {
             CreatePostView()
         })
         .overlay(Button(action: {
             isNew.toggle()
 
         }, label: {
-            Image("Center_Button")
+            Image("Center")
                 .resizable()
-                .frame(width: 60, height: 60, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-                .padding()
+                .scaledToFill()
+                .frame(width: 70, height: 70, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                .offset(y:-5)
         }), alignment: .bottom)
     }
 }

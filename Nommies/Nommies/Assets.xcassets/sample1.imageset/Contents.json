@@ -1,0 +1,21 @@
+{
+  "images" : [
+    {
+      "filename" : "cafe-coffee-decorated-warm-colors-makes-it-look-warm-suitable-resting-sitting-shop-furniture-uses-brown-iron-chairs-tabletop-uses-white-marble-soft-seat-tone-control (image).jpg",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
