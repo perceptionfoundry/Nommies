@@ -12,7 +12,7 @@ struct RegisterView: View {
     @State var isSegue = false
     var body: some View {
       
-            
+        ScrollView{
                 VStack{
                     
                     HStack{
@@ -72,6 +72,7 @@ struct RegisterView: View {
                         }
                     })
                 }// VStack - MAIN (END)
+    }
                 .padding()
                 .navigationBarHidden(true)
                 .navigationBarBackButtonHidden(true)

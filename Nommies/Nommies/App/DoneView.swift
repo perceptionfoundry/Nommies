@@ -12,7 +12,7 @@ struct DoneView: View {
     @State var isSegue = false
     var body: some View {
       
-            
+        ScrollView{
                 VStack{
                     
                     Image("Logo_small")
@@ -32,7 +32,7 @@ struct DoneView: View {
                     
                    
                     NavigationLink(
-                        destination: HomeView(),
+                        destination: TabMainView(),
                         isActive: $isSegue,
                         label: {
                             SubmissionButtonView(action: startButtonAction, title: "Let's start")
@@ -42,6 +42,7 @@ struct DoneView: View {
                    
                    
                 }// VStack - MAIN (END)
+    }
                 .padding()
                 .navigationBarHidden(true)
                 .navigationBarBackButtonHidden(true)
