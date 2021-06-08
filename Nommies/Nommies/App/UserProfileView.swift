@@ -1,13 +1,13 @@
 //
-//  ProfileView.swift
+//  UserProfileView.swift
 //  Nommies
 //
-//  Created by Syed ShahRukh Haider on 04/06/2021.
+//  Created by Syed ShahRukh Haider on 08/06/2021.
 //
 
 import SwiftUI
 
-struct ProfileView: View {
+struct UserProfileView: View {
     var body: some View {
         ScrollView{
         VStack(spacing: 20) {
@@ -22,22 +22,7 @@ struct ProfileView: View {
             
             Text("My Name")
                 .font(.custom("HelveticaNeue-Bold", size: 20))
-            
-            
-            Button(action: {
-                
-            }, label: {
-                ZStack {
-                    RoundedRectangle(cornerRadius: 18)
-                        .fill(Color(UIColor(red: 0.945, green: 0.961, blue: 0.961, alpha: 1)))
-                        .frame(width: GetRect().width * 0.85, height: 56, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-                    Text("Edit Profile")
-                        .font(.custom("HelveticaNeue-Bold", size: 16))
-                        .foregroundColor(Color(UIColor(red: 0.106, green: 0.349, blue: 0.322, alpha: 1)))
-                                        }
-                
-            })
-            .padding()
+           
             
             VStack(alignment: .leading, spacing: 20){
                 HStack {
@@ -110,22 +95,20 @@ and perspective that my reading gives me has strengthened abilities. Opportuniti
         .background(
             VStack{
                 HStack {
-                    Spacer()
-                    Text("My Profile")
-                        .font(.custom("HelveticaNeue-Medium", size: 16))
-                    Spacer()
                     Button(action: {
                         
                     }, label: {
-                       Image(systemName: "gearshape")
+                       Image(systemName: "arrow.backward")
                         .foregroundColor(.black)
                     })
-                    
+                    Spacer()
+                    Text("User Profile")
+                        .font(.custom("HelveticaNeue-Medium", size: 16))
+                    Spacer()
                 }
-                .padding()
                 .background(Rectangle()
                                 .fill(Color.white)
-                                .frame(width: GetRect().width, height: 40, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                                .frame(width: GetRect().width, height: 35, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                                 .shadow(color: .gray, radius: 1, x: /*@START_MENU_TOKEN@*/0.0/*@END_MENU_TOKEN@*/, y: 1.25)
                                 .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/))
                 
@@ -139,8 +122,8 @@ and perspective that my reading gives me has strengthened abilities. Opportuniti
     }
 }
 
-struct ProfileView_Previews: PreviewProvider {
+struct UserProfileView_Previews: PreviewProvider {
     static var previews: some View {
-        ProfileView()
+        UserProfileView()
     }
 }
