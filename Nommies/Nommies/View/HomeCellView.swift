@@ -20,6 +20,7 @@ struct HomeCellView: View {
                     .frame(width: 36, height: 36, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                 VStack(alignment:.leading) {
                     Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+                        .foregroundColor(.black)
                         .font(.custom("HelveticaNeue-Bold", size: 16))
                     Text("234 Canal St, New York, NY 10013")
                         .foregroundColor(.gray)

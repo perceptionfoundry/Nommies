@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct HomeView: View {
+    
+    @State var isShowUserProfile = false
     var body: some View {
         
         VStack {
@@ -30,7 +32,16 @@ struct HomeView: View {
                             ScrollView{
                                 LazyVStack{
                                     ForEach(1...10,id:\.self){ _ in
-                                        HomeCellView()
+                                        NavigationLink(
+                                            destination: UserProfileView(),
+                                            isActive: $isShowUserProfile,
+                                            label: {
+                                                HomeCellView()
+                                                    .onTapGesture {
+                                                        isShowUserProfile.toggle()
+                                                    }
+                                            })
+                                       
                                     }
                                 }
                             }.padding(.top, 20)

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F23C0A0C2670FF40007F4EB3 /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23C0A0B2670FF40007F4EB3 /* SettingView.swift */; };
 		F23D85E0266F65BF00512450 /* UserProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23D85DF266F65BF00512450 /* UserProfileView.swift */; };
 		F244B8AE2669E38C001FFFCE /* TabMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F244B8AD2669E38C001FFFCE /* TabMainView.swift */; };
 		F244B8B12669E3A1001FFFCE /* CustomTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F244B8AF2669E3A1001FFFCE /* CustomTabView.swift */; };
@@ -30,6 +31,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F23C0A0B2670FF40007F4EB3 /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
 		F23D85DF266F65BF00512450 /* UserProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileView.swift; sourceTree = "<group>"; };
 		F244B8AD2669E38C001FFFCE /* TabMainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabMainView.swift; sourceTree = "<group>"; };
 		F244B8AF2669E3A1001FFFCE /* CustomTabView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTabView.swift; sourceTree = "<group>"; };
@@ -125,6 +127,7 @@
 				F244B8B72669E6AA001FFFCE /* NotificationView.swift */,
 				F244B8B92669E6B8001FFFCE /* ProfileView.swift */,
 				F23D85DF266F65BF00512450 /* UserProfileView.swift */,
+				F23C0A0B2670FF40007F4EB3 /* SettingView.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -221,6 +224,7 @@
 				F244B8B42669E675001FFFCE /* FoodieView.swift in Sources */,
 				F244B8B12669E3A1001FFFCE /* CustomTabView.swift in Sources */,
 				F2A8078D26678A1A00DE096C /* HomeView.swift in Sources */,
+				F23C0A0C2670FF40007F4EB3 /* SettingView.swift in Sources */,
 				F244B8BE266A17CD001FFFCE /* HomeCellView.swift in Sources */,
 				F2A8078B266787EF00DE096C /* DoneView.swift in Sources */,
 				F23D85E0266F65BF00512450 /* UserProfileView.swift in Sources */,

@@ -8,8 +8,36 @@
 import SwiftUI
 
 struct UserProfileView: View {
+    @Environment(\.presentationMode) var presentationMode
     var body: some View {
-        ScrollView{
+       
+        VStack{
+      
+            ZStack(alignment:.top) {
+                Rectangle()
+                                .fill(Color.white)
+                                .frame(width: GetRect().width, height: 80, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                                .shadow(color: .gray, radius: 1, x: /*@START_MENU_TOKEN@*/0.0/*@END_MENU_TOKEN@*/, y: 1.25)
+                                .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
+                HStack {
+                        Button(action: {
+                            presentationMode.wrappedValue.dismiss()
+                        }, label: {
+                           Image(systemName: "arrow.backward")
+                            .foregroundColor(.black)
+                        })
+                        Spacer()
+                        Text("User Profile")
+                            .font(.custom("HelveticaNeue-Medium", size: 16))
+                        Spacer()
+                    }
+                .padding(.horizontal)
+            }
+                
+                        
+                
+            
+            ScrollView{
         VStack(spacing: 20) {
          
             
@@ -17,7 +45,7 @@ struct UserProfileView: View {
                 .resizable()
                 .frame(width: 92, height: 92, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                 .scaledToFill()
-                .padding(.top, 70)
+                
                
             
             Text("My Name")
@@ -92,33 +120,56 @@ and perspective that my reading gives me has strengthened abilities. Opportuniti
 
             Spacer()
         }
-        .background(
-            VStack{
-                HStack {
-                    Button(action: {
-                        
-                    }, label: {
-                       Image(systemName: "arrow.backward")
-                        .foregroundColor(.black)
-                    })
-                    Spacer()
-                    Text("User Profile")
-                        .font(.custom("HelveticaNeue-Medium", size: 16))
-                    Spacer()
-                }
-                .background(Rectangle()
-                                .fill(Color.white)
-                                .frame(width: GetRect().width, height: 35, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-                                .shadow(color: .gray, radius: 1, x: /*@START_MENU_TOKEN@*/0.0/*@END_MENU_TOKEN@*/, y: 1.25)
-                                .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/))
-                
-                Spacer()
-                
-            })
+       
         .padding()
+        
+
         }
+    }
         .navigationBarHidden(true)
         .navigationBarBackButtonHidden(true)
+        .overlay(
+            
+            VStack {
+                Spacer()
+                ZStack{
+                    Rectangle()
+                        .fill(Color.white)
+                        .frame(width: GetRect().width, height: 100, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                    HStack {
+                        Image("dp_small")
+                            .resizable()
+                            .scaledToFill()
+                            .clipShape(/*@START_MENU_TOKEN@*/Circle()/*@END_MENU_TOKEN@*/)
+                            .frame(width: 36, height: 36, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                        VStack(alignment:.leading) {
+                            Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+                                .font(.custom("HelveticaNeue-Bold", size: 16))
+                            Text("234 Canal St, New York, NY 10013")
+                                .foregroundColor(.gray)
+                                .font(.custom("HelveticaNeue-Regular", size: 13))
+                        }
+                        Button(action: {
+                            
+                        }, label: {
+                            ZStack {
+                                RoundedRectangle(cornerRadius: 18)
+                                    .fill(Color(#colorLiteral(red: 0.1025352255, green: 0.3505379558, blue: 0.3216813207, alpha: 1)))
+                                    .frame(width: 90, height: 50, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                                Text("Request")
+                                    .font(.custom("HelveticaNeue-Bold", size: 14))
+                                    .foregroundColor(.white)
+                                    .padding()
+                            }
+                        })
+                        .padding()
+                        
+                    }
+                    
+                }
+            }.edgesIgnoringSafeArea(.bottom)
+            , alignment: .bottom)
+        
     }
 }
 
