@@ -9,6 +9,7 @@ import SwiftUI
 
 struct ProfileView: View {
     @State  var isSettingOpen = false
+    @State  var isEditOpen = false
     var body: some View {
         VStack {
             
@@ -63,20 +64,27 @@ struct ProfileView: View {
                     .font(.custom("HelveticaNeue-Bold", size: 20))
                 
                 
-                Button(action: {
-                    
-                }, label: {
-                    ZStack {
-                        RoundedRectangle(cornerRadius: 18)
-                            .fill(Color(UIColor(red: 0.945, green: 0.961, blue: 0.961, alpha: 1)))
-                            .frame(width: GetRect().width * 0.85, height: 56, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-                        Text("Edit Profile")
-                            .font(.custom("HelveticaNeue-Bold", size: 16))
-                            .foregroundColor(Color(UIColor(red: 0.106, green: 0.349, blue: 0.322, alpha: 1)))
-                                            }
-                    
-                })
+                NavigationLink(
+                    destination: EditProfileView(),
+                    isActive: $isEditOpen,
+                    label: {
+                        Button(action: {
+                            isEditOpen.toggle()
+                        }, label: {
+                            ZStack {
+                                RoundedRectangle(cornerRadius: 18)
+                                    .fill(Color(UIColor(red: 0.945, green: 0.961, blue: 0.961, alpha: 1)))
+                                    .frame(width: GetRect().width * 0.85, height: 56, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                                Text("Edit Profile")
+                                    .font(.custom("HelveticaNeue-Bold", size: 16))
+                                    .foregroundColor(Color(UIColor(red: 0.106, green: 0.349, blue: 0.322, alpha: 1)))
+                                                    }
+                            
+                        })
+                    })
+               
                 .padding()
+                
                 
                 VStack(alignment: .leading, spacing: 20){
                     HStack {

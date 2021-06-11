@@ -9,7 +9,7 @@ import SwiftUI
 
 struct CustomTabView: View {
         
-    var tabs = ["Home","Foodies","Center","Notification","Profile"]
+    var tabs = ["Home","Foodies","Center1","Notification","Profile"]
     
     @State var selectedTab = "Home"
     @State var isNew = false

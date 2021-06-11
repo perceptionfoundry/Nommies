@@ -22,6 +22,7 @@
 		F2997B952666B3810011969D /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2997B942666B3810011969D /* WelcomeView.swift */; };
 		F2997B972666B3840011969D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2997B962666B3840011969D /* Assets.xcassets */; };
 		F2997B9A2666B3840011969D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2997B992666B3840011969D /* Preview Assets.xcassets */; };
+		F29F27E3267378B500189254 /* EditProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29F27E2267378B500189254 /* EditProfileView.swift */; };
 		F2A80774266758DF00DE096C /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2A80773266758DF00DE096C /* Launch Screen.storyboard */; };
 		F2A8078326675BBB00DE096C /* Keedy SansBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F2A8078126675BBB00DE096C /* Keedy SansBold.ttf */; };
 		F2A80787266771D700DE096C /* SubmissionButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A80786266771D700DE096C /* SubmissionButtonView.swift */; };
@@ -48,6 +49,7 @@
 		F2997B962666B3840011969D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F2997B992666B3840011969D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F2997B9B2666B3840011969D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F29F27E2267378B500189254 /* EditProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileView.swift; sourceTree = "<group>"; };
 		F2A80773266758DF00DE096C /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		F2A8078126675BBB00DE096C /* Keedy SansBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Keedy SansBold.ttf"; sourceTree = "<group>"; };
 		F2A80786266771D700DE096C /* SubmissionButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmissionButtonView.swift; sourceTree = "<group>"; };
@@ -128,6 +130,7 @@
 				F244B8B92669E6B8001FFFCE /* ProfileView.swift */,
 				F23D85DF266F65BF00512450 /* UserProfileView.swift */,
 				F23C0A0B2670FF40007F4EB3 /* SettingView.swift */,
+				F29F27E2267378B500189254 /* EditProfileView.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -215,6 +218,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F29F27E3267378B500189254 /* EditProfileView.swift in Sources */,
 				F244B8B22669E3A1001FFFCE /* TabButton.swift in Sources */,
 				F244B8BA2669E6B8001FFFCE /* ProfileView.swift in Sources */,
 				F2A80787266771D700DE096C /* SubmissionButtonView.swift in Sources */,

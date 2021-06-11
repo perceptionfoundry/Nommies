@@ -17,6 +17,7 @@ struct NotificationView: View {
                     
                 Spacer()
             }
+            .padding(.top, 40)
             .padding()
             .background(Color.white)
             GeometryReader{ geometry in
@@ -39,11 +40,13 @@ struct NotificationView: View {
                         }.padding()
                     }
                 }
-                .frame(height: (geometry.size.height * 0.115) * 5, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                .frame(height: (geometry.size.height * 0.105) * 5, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                 Spacer()
             }
             
-        }        .background(Rectangle()
+        }
+        .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
+        .background(Rectangle()
                                 .fill(Color(UIColor(red: 0.949, green: 0.949, blue: 0.949, alpha: 1)))
                                 .frame(width: GetRect().width, height: GetRect().height)
                             .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/))
