@@ -132,15 +132,15 @@
 				F2A8078A266787EF00DE096C /* DoneView.swift */,
 				F244B8AD2669E38C001FFFCE /* TabMainView.swift */,
 				F2A8078C26678A1A00DE096C /* HomeView.swift */,
+				F233CE462678AF8A001DA751 /* DetailView.swift */,
 				F244B8B32669E675001FFFCE /* FoodieView.swift */,
+				F233CE4026786EE4001DA751 /* ChatView.swift */,
 				F244B8B52669E698001FFFCE /* CreatePostView.swift */,
 				F244B8B72669E6AA001FFFCE /* NotificationView.swift */,
 				F244B8B92669E6B8001FFFCE /* ProfileView.swift */,
 				F23D85DF266F65BF00512450 /* UserProfileView.swift */,
 				F23C0A0B2670FF40007F4EB3 /* SettingView.swift */,
 				F29F27E2267378B500189254 /* EditProfileView.swift */,
-				F233CE4026786EE4001DA751 /* ChatView.swift */,
-				F233CE462678AF8A001DA751 /* DetailView.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";

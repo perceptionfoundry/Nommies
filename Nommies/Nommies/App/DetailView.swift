@@ -44,7 +44,7 @@ struct DetailView: View {
                     .font(.custom("HelveticaNeue-Regular", size: 17))
             }
             .padding()
-            
+            VStack{
             ScrollView(.horizontal, showsIndicators: false, content: {
                 
                 HStack {
@@ -57,7 +57,16 @@ struct DetailView: View {
                     }
                 }
             })
-            .padding(.bottom)
+            .padding(.bottom, 0)
+         
+                
+                Text("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tristique scelerisque pharetra. Proin turpis purus, venenatis consequat magna quis, sollicitudin tincidunt magna. Donec eget volutpat dui. ")
+                    .foregroundColor(.black)
+                    .font(.custom("HelveticaNeue-Regular", size: 17))
+                    .lineLimit(4)
+                    .multilineTextAlignment(/*@START_MENU_TOKEN@*/.leading/*@END_MENU_TOKEN@*/)
+                    .frame(width: GetRect().width * 0.9, height: 150, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+        }
             .padding()
             
             HStack {
