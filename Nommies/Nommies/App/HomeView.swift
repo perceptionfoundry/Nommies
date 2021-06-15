@@ -17,11 +17,11 @@ struct HomeView: View {
    
             Spacer()
                 VStack {
-                    ZStack(alignment:.top) {
+                    ZStack(alignment:.bottom) {
                         RoundedRectangle(cornerRadius: /*@START_MENU_TOKEN@*/25.0/*@END_MENU_TOKEN@*/)
                             
                             .fill(Color.white)
-                            .frame(height: GetRect().height * 0.4 , alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                            .frame(height: GetRect().height * 0.45 , alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                             .shadow(radius: 1)
                         VStack {
                             Capsule()

@@ -68,7 +68,7 @@ struct CustomTabView: View {
             Image("Center")
                 .resizable()
                 .scaledToFill()
-                .frame(width: 70, height: 70, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                .frame(width: 60, height: 60, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                 .offset(y:-5)
         }), alignment: .bottom)
     }
