@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		F233CE4126786EE4001DA751 /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F233CE4026786EE4001DA751 /* ChatView.swift */; };
+		F233CE432678A182001DA751 /* RequestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F233CE422678A182001DA751 /* RequestView.swift */; };
+		F233CE452678AD1D001DA751 /* InterestUserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F233CE442678AD1D001DA751 /* InterestUserView.swift */; };
+		F233CE472678AF8A001DA751 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F233CE462678AF8A001DA751 /* DetailView.swift */; };
 		F23C0A0C2670FF40007F4EB3 /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23C0A0B2670FF40007F4EB3 /* SettingView.swift */; };
 		F23D85E0266F65BF00512450 /* UserProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23D85DF266F65BF00512450 /* UserProfileView.swift */; };
 		F244B8AE2669E38C001FFFCE /* TabMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F244B8AD2669E38C001FFFCE /* TabMainView.swift */; };
@@ -34,6 +37,9 @@
 
 /* Begin PBXFileReference section */
 		F233CE4026786EE4001DA751 /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
+		F233CE422678A182001DA751 /* RequestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestView.swift; sourceTree = "<group>"; };
+		F233CE442678AD1D001DA751 /* InterestUserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterestUserView.swift; sourceTree = "<group>"; };
+		F233CE462678AF8A001DA751 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		F23C0A0B2670FF40007F4EB3 /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
 		F23D85DF266F65BF00512450 /* UserProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileView.swift; sourceTree = "<group>"; };
 		F244B8AD2669E38C001FFFCE /* TabMainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabMainView.swift; sourceTree = "<group>"; };
@@ -134,6 +140,7 @@
 				F23C0A0B2670FF40007F4EB3 /* SettingView.swift */,
 				F29F27E2267378B500189254 /* EditProfileView.swift */,
 				F233CE4026786EE4001DA751 /* ChatView.swift */,
+				F233CE462678AF8A001DA751 /* DetailView.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -146,6 +153,8 @@
 				F244B8B02669E3A1001FFFCE /* TabButton.swift */,
 				F244B8BB2669FF5E001FFFCE /* InsetMapView.swift */,
 				F244B8BD266A17CD001FFFCE /* HomeCellView.swift */,
+				F233CE422678A182001DA751 /* RequestView.swift */,
+				F233CE442678AD1D001DA751 /* InterestUserView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -221,13 +230,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F233CE432678A182001DA751 /* RequestView.swift in Sources */,
 				F233CE4126786EE4001DA751 /* ChatView.swift in Sources */,
 				F29F27E3267378B500189254 /* EditProfileView.swift in Sources */,
 				F244B8B22669E3A1001FFFCE /* TabButton.swift in Sources */,
 				F244B8BA2669E6B8001FFFCE /* ProfileView.swift in Sources */,
+				F233CE472678AF8A001DA751 /* DetailView.swift in Sources */,
 				F2A80787266771D700DE096C /* SubmissionButtonView.swift in Sources */,
 				F244B8BC2669FF5E001FFFCE /* InsetMapView.swift in Sources */,
 				F2A8078926677F7300DE096C /* RegisterView.swift in Sources */,
+				F233CE452678AD1D001DA751 /* InterestUserView.swift in Sources */,
 				F2997B952666B3810011969D /* WelcomeView.swift in Sources */,
 				F244B8B42669E675001FFFCE /* FoodieView.swift in Sources */,
 				F244B8B12669E3A1001FFFCE /* CustomTabView.swift in Sources */,

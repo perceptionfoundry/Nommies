@@ -8,25 +8,30 @@
 import SwiftUI
 
 struct HomeCellView: View {
+    
+    var action : ()-> Void
     @State var totalLike = 2
     var body: some View {
         VStack(alignment:.leading){
         
-            HStack {
-                Image("dp_small")
-                    .resizable()
-                    .scaledToFill()
-                    .clipShape(/*@START_MENU_TOKEN@*/Circle()/*@END_MENU_TOKEN@*/)
-                    .frame(width: 36, height: 36, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-                VStack(alignment:.leading) {
-                    Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-                        .foregroundColor(.black)
-                        .font(.custom("HelveticaNeue-Bold", size: 16))
-                    Text("234 Canal St, New York, NY 10013")
-                        .foregroundColor(.gray)
-                        .font(.custom("HelveticaNeue-Regular", size: 13))
+            Button(action: action, label: {
+                HStack {
+                    Image("dp_small")
+                        .resizable()
+                        .scaledToFill()
+                        .clipShape(/*@START_MENU_TOKEN@*/Circle()/*@END_MENU_TOKEN@*/)
+                        .frame(width: 36, height: 36, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                    VStack(alignment:.leading) {
+                        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+                            .foregroundColor(.black)
+                            .font(.custom("HelveticaNeue-Bold", size: 16))
+                        Text("234 Canal St, New York, NY 10013")
+                            .foregroundColor(.gray)
+                            .font(.custom("HelveticaNeue-Regular", size: 13))
+                    }
                 }
-            }
+            })
+          
             
             ScrollView(.horizontal, showsIndicators: false, content: {
                 HStack {
@@ -65,9 +70,9 @@ struct HomeCellView: View {
     }
 }
 
-struct HomeCellView_Previews: PreviewProvider {
-    static var previews: some View {
-        HomeCellView()
-            .previewLayout(.sizeThatFits)
-    }
-}
+//struct HomeCellView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        HomeCellView(action: ()->())
+//            .previewLayout(.sizeThatFits)
+//    }
+//}

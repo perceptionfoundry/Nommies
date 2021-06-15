@@ -7,16 +7,22 @@
 
 import SwiftUI
 
+
+var ispopUp = false
+
 struct CustomTabView: View {
         
     var tabs = ["Home","Foodies","Center1","Notification","Profile"]
     
     @State var selectedTab = "Home"
     @State var isNew = false
+    @State var isRequired = false
     
 
     var body: some View {
-        
+        ZStack{
+            
+        VStack{
         ZStack(alignment: Alignment(horizontal: .center, vertical: .bottom)){
             
             
@@ -71,6 +77,30 @@ struct CustomTabView: View {
                 .frame(width: 60, height: 60, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                 .offset(y:-5)
         }), alignment: .bottom)
+        
+    }
+        .opacity(isRequired ? 0.1 : 1)
+           
+            if isRequired{
+                VStack{
+                    RequestView(isRequired: $isRequired)
+                }
+            }else{
+                VStack{
+                    RequestView(isRequired: $isRequired)
+                }.hidden()
+            }
+          
+            
+        }// OUTER ZSTACK
+        .onAppear(){
+            
+            if ispopUp == false{
+            DispatchQueue.main.asyncAfter(deadline: .now() + 4) {
+                isRequired.toggle()
+            }
+            }
+        }
     }
 }
 

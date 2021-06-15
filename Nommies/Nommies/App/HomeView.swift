@@ -9,7 +9,9 @@ import SwiftUI
 
 struct HomeView: View {
     
+    @State var isDetail = false
     @State var isShowUserProfile = false
+
     var body: some View {
         
         VStack {
@@ -33,12 +35,14 @@ struct HomeView: View {
                                 LazyVStack{
                                     ForEach(1...10,id:\.self){ _ in
                                         NavigationLink(
-                                            destination: UserProfileView(),
-                                            isActive: $isShowUserProfile,
+                                            destination: DetailView(),
+                                            isActive: $isDetail,
                                             label: {
-                                                HomeCellView()
+                                                HomeCellView(action: {
+                                                    
+                                                })
                                                     .onTapGesture {
-                                                        isShowUserProfile.toggle()
+                                                        isDetail.toggle()
                                                     }
                                             })
                                        

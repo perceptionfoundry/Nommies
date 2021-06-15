@@ -25,25 +25,33 @@ struct FoodieView: View {
             .background(Color.white)
             GeometryReader{ geometry in
               
-                NavigationLink(
-                    destination: ChatView(),
-                    isActive: $openChat,
-                    label: {
-                List{
+                ScrollView{
+                VStack{
                     
                     ForEach(0...4, id:\.self){ _ in
                       
-                                FoodieCellView()
-                                    .onTapGesture {
-                                        openChat.toggle()
-                                    }
+                        NavigationLink(
+                            destination: ChatView(),
+                            isActive: $openChat,
+                            label: {
+                                
+                                Button(action: {
+                                    openChat.toggle()
+                                }, label: {
+                                    FoodieCellView()
+                                        
+                                })
+                            })
+                               
+                                    
                        
                     }
                     
                 }
                 .frame(height: (geometry.size.height * 0.13) * 5, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                }
                 Spacer()
-                    })
+                
             }
             
         }
@@ -104,5 +112,6 @@ struct FoodieCellView: View {
             }
             .frame(width: 80)
         }.padding()
+        .background(Color.white)
     }
 }
