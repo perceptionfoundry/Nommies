@@ -9,14 +9,13 @@ import SwiftUI
 
 struct ChatView: View {
     @Environment(\.presentationMode) var presentationMode
-    
     let dummyMsg = [msgData(id: 0,image:"avatar1",user: "jetson", msg: "Hi there!", myMsg: false),
                     msgData(id: 1,image:"avatar2",user: "me", msg: "How are you?", myMsg: true),
                     msgData(id: 2,image:"avatar1",user: "jetson", msg: "New Album is Going to be Release", myMsg: false),
                     msgData(id: 3,image:"avatar2",user: "me", msg: "Have you added to any online store?? Have you added to any online store?? Have you added to any online store?? Have you added to any online store??", myMsg: true)]
     
     var body: some View {
-       
+        
         VStack{
             // TOP
             HStack {
@@ -26,7 +25,7 @@ struct ChatView: View {
                     Image(systemName: "arrow.backward")
                         .foregroundColor(.black)
                 })
-               
+                
                 Image("dp_small")
                     .resizable()
                     .scaledToFill()
@@ -56,16 +55,16 @@ struct ChatView: View {
             
             
             ScrollView{
-
-
+                
+                
                 ForEach(0...3, id:\.self){ i in
                     
                     
                     ChatCellView(data: dummyMsg[i])
-                       
+                    
                 }
-
-
+                
+                
             }
             Spacer()
             // BOTTOM
@@ -84,10 +83,11 @@ struct ChatView: View {
                 }.padding()
                 .background(RoundedRectangle(cornerRadius: 12)
                                 .stroke(Color.gray)
-                                )
+                )
                 .frame(width: GetRect().width * 0.9, height: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
             }
         }
+        
         .navigationBarHidden(true)
         .navigationBarBackButtonHidden(true)
     }
@@ -112,7 +112,7 @@ struct msgTail : Shape{
 }
 
 struct ChatCellView: View {
-   
+    
     var data : msgData
     
     
@@ -123,7 +123,7 @@ struct ChatCellView: View {
                 VStack(alignment:.leading) {
                     
                     HStack(alignment:.bottom) {
-                       
+                        
                         Image(data.image)
                             .resizable()
                             .clipShape(/*@START_MENU_TOKEN@*/Circle()/*@END_MENU_TOKEN@*/)
@@ -157,7 +157,7 @@ struct ChatCellView: View {
                 VStack(alignment:.trailing) {
                     
                     HStack(alignment:.bottom) {
-                       
+                        
                         
                         VStack(alignment:.leading) {
                             Text(data.user)
@@ -182,7 +182,7 @@ struct ChatCellView: View {
                     
                     
                 }
-               
+                
             }
             .padding(.leading, 35)
             .padding()

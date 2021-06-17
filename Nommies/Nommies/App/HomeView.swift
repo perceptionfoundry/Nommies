@@ -11,19 +11,21 @@ struct HomeView: View {
     
     @State var isDetail = false
     @State var isShowUserProfile = false
+    @State var offsetValue: CGFloat = GetRect().height * 0.5
+  
 
     var body: some View {
         
         VStack {
            
    
-            Spacer()
+          
                 VStack {
                     ZStack(alignment:.bottom) {
                         RoundedRectangle(cornerRadius: /*@START_MENU_TOKEN@*/25.0/*@END_MENU_TOKEN@*/)
                             
                             .fill(Color.white)
-                            .frame(height: GetRect().height * 0.45 , alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                            .frame(height: GetRect().height * 0.9 , alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                             .shadow(radius: 1)
                         VStack {
                             Capsule()
@@ -55,15 +57,38 @@ struct HomeView: View {
                                 .frame(height: 50)
                             
                         }
-                        .frame(height: 400, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                        
                         
                     }
                     
                     
-                }.offset(x: 0, y: 40)
-               
+                }.offset(y: offsetValue)
+                .animation(.spring())
+                .gesture(
+                DragGesture()
+                    .onChanged({ value in
+                        
+                    
+                        let startLocation = value.startLocation
+                        print("start:\(offsetValue), \(startLocation)")
+                        
+                        if offsetValue <= 530 && offsetValue >= 70{
+                        offsetValue = startLocation.y + value.translation.height - 2
+                            print("end:\(offsetValue)")
+                            
+                        }
+                    })
+                    
+                    .onEnded({ _ in
+                        if offsetValue > 530{
+                        offsetValue = 529
+                        }else if offsetValue < 70{
+                            offsetValue = 71
+                        }
+                    })
+                )
                 
-            
+            Spacer()
           
         }.background(
             VStack {

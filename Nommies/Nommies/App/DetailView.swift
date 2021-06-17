@@ -13,6 +13,7 @@ struct DetailView: View {
     
     var body: some View {
         
+       
         VStack(alignment:.leading){
             // TOP
             HStack {
@@ -33,7 +34,8 @@ struct DetailView: View {
                 
             }
             .padding()
-            
+            ScrollView{
+            VStack{
            // TITLE
             VStack(alignment:.leading) {
                 Text("Tea House")
@@ -83,17 +85,21 @@ struct DetailView: View {
                 .font(.custom("HelveticaNeue-Regular", size: 17))
                 .padding(.leading)
             
-            ScrollView{
+          
                 VStack{
                     ForEach(0...4, id:\.self){ _  in
                         InterestUserView()
                     }
                 }
-            }
+          
             
             }
+            
+        }
+            }
             Spacer()
-    }
+        }
+       
         .navigationBarHidden(true)
         .navigationBarBackButtonHidden(true)
     }
